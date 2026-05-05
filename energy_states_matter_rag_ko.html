@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCSE Physics — Energy & States of Matter Knowledge Organiser</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.6}
+.app{max-width:900px;margin:0 auto;padding:1.5rem 1rem 3rem}
+h1{font-size:22px;font-weight:600;margin-bottom:4px}
+h3{font-size:14px;font-weight:600;margin-bottom:6px}
+.subtitle{font-size:13px;color:#666;margin-bottom:20px}
+
+.nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px}
+.nb{padding:7px 14px;font-size:13px;border:1px solid #ccc;border-radius:8px;background:#fff;color:#555;cursor:pointer;font-family:inherit}
+.nb:hover{background:#f0f0f0}
+.nb.on{background:#1a56db;color:#fff;border-color:#1a56db}
+
+.pg{display:none}.pg.on{display:block}
+
+.card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:1rem 1.2rem;margin-bottom:12px}
+.c-blue{border-left:4px solid #3b82f6}
+.c-teal{border-left:4px solid #14b8a6}
+.c-purple{border-left:4px solid #8b5cf6}
+.c-amber{border-left:4px solid #f59e0b}
+.c-red{border-left:4px solid #ef4444}
+.c-green{border-left:4px solid #22c55e}
+.c-coral{border-left:4px solid #f97316}
+.c-pink{border-left:4px solid #ec4899}
+.c-indigo{border-left:4px solid #6366f1}
+.c-sky{border-left:4px solid #0ea5e9}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+
+.bdg{display:inline-block;padding:2px 10px;border-radius:6px;font-size:12px;font-weight:600;margin-bottom:7px}
+.b-blue{background:#dbeafe;color:#1e40af}
+.b-teal{background:#ccfbf1;color:#0f766e}
+.b-purple{background:#ede9fe;color:#6d28d9}
+.b-amber{background:#fef3c7;color:#92400e}
+.b-red{background:#fee2e2;color:#991b1b}
+.b-green{background:#dcfce7;color:#166534}
+.b-coral{background:#ffedd5;color:#9a3412}
+.b-pink{background:#fce7f3;color:#9d174d}
+.b-indigo{background:#e0e7ff;color:#3730a3}
+.b-sky{background:#e0f2fe;color:#075985}
+
+.fbox{background:#f3f4f6;border-radius:8px;padding:10px 14px;font-size:16px;font-weight:700;text-align:center;margin:8px 0}
+.fbox-sm{background:#f3f4f6;border-radius:8px;padding:6px 12px;font-size:13px;font-weight:700;text-align:center;margin:5px 0}
+
+.row{display:flex;align-items:flex-start;gap:10px;padding:6px 0;border-bottom:1px solid #f0f0f0}
+.row:last-child{border-bottom:none}
+.tm{font-weight:600;font-size:13px;min-width:155px;flex-shrink:0}
+.df{font-size:13px;color:#444;line-height:1.5}
+
+.st{font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.07em;margin-bottom:9px;margin-top:18px}
+.divider{border:none;border-top:3px solid #e0e0e0;margin:26px 0}
+
+.topic-banner{border-radius:10px;padding:9px 16px;font-size:14px;font-weight:700;color:#fff;margin:22px 0 14px;display:flex;align-items:center;gap:8px}
+.tb-blue{background:#1e40af}.tb-teal{background:#0f766e}.tb-purple{background:#6d28d9}
+.tb-amber{background:#92400e}.tb-coral{background:#9a3412}.tb-indigo{background:#3730a3}
+.tb-sky{background:#075985}.tb-green{background:#166534}.tb-pink{background:#9d174d}
+
+.warn{background:#fee2e2;border-left:4px solid #ef4444;border-radius:0 8px 8px 0;padding:8px 13px;font-size:13px;color:#991b1b;margin-top:9px;line-height:1.5}
+.info{background:#dbeafe;border-left:4px solid #3b82f6;border-radius:0 8px 8px 0;padding:8px 13px;font-size:13px;color:#1e40af;margin-top:9px;line-height:1.5}
+.success{background:#dcfce7;border-left:4px solid #22c55e;border-radius:0 8px 8px 0;padding:8px 13px;font-size:13px;color:#166534;margin-top:9px;line-height:1.5}
+.amber-box{background:#fef3c7;border-left:4px solid #f59e0b;border-radius:0 8px 8px 0;padding:8px 13px;font-size:13px;color:#92400e;margin-top:9px;line-height:1.5}
+
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:8px 10px;font-weight:600;border-bottom:2px solid #e0e0e0;background:#f9f9f9}
+td{padding:7px 10px;border-bottom:1px solid #f0f0f0;vertical-align:top}
+tr:last-child td{border-bottom:none}
+
+/* RAG */
+.rag-section{margin-bottom:18px}
+.rag-header{font-size:14px;font-weight:700;padding:8px 14px;border-radius:8px 8px 0 0;color:#fff}
+.rh-blue{background:#1e40af}.rh-teal{background:#0f766e}.rh-purple{background:#6d28d9}
+.rh-amber{background:#92400e}.rh-coral{background:#9a3412}.rh-indigo{background:#3730a3}
+.rh-sky{background:#075985}.rh-green{background:#166534}.rh-pink{background:#9d174d}
+.rag-body{background:#fff;border:1px solid #e0e0e0;border-top:none;border-radius:0 0 10px 10px;overflow:hidden}
+.rag-row{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;border-bottom:1px solid #f0f0f0;flex-wrap:wrap;gap:8px}
+.rag-row:last-child{border-bottom:none}
+.rag-skill{font-size:13px;flex:1;min-width:200px;line-height:1.4}
+.rag-btns{display:flex;gap:5px;flex-shrink:0}
+.rb2{padding:5px 13px;font-size:12px;border:1px solid #ccc;border-radius:6px;background:#f9f9f9;cursor:pointer;font-family:inherit;font-weight:600}
+.rb2:hover{opacity:.85}
+.rg{background:#16a34a;color:#fff;border-color:#16a34a}
+.ra{background:#d97706;color:#fff;border-color:#d97706}
+.rr{background:#dc2626;color:#fff;border-color:#dc2626}
+
+/* DIAGNOSTIC */
+.qb{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:1rem 1.2rem;margin-bottom:14px}
+.qt{font-size:14px;margin-bottom:12px;line-height:1.55}
+.ob{display:block;width:100%;text-align:left;padding:8px 14px;margin-bottom:6px;font-size:13px;border:1px solid #ddd;border-radius:8px;background:#f9f9f9;color:#1a1a1a;cursor:pointer;font-family:inherit}
+.ob:hover:not(:disabled){background:#f0f0f0}
+.ob:disabled{cursor:default}
+.oc{background:#dcfce7;color:#166534;border-color:#22c55e;font-weight:600}
+.ow{background:#fee2e2;color:#991b1b;border-color:#ef4444}
+.orc{background:#dcfce7;color:#166534;border-color:#22c55e}
+.fb{font-size:13px;margin-top:8px;padding:8px 12px;border-radius:8px;line-height:1.5;display:none}
+.fb.on{display:block}.fbc{background:#dcfce7;color:#166534}.fbw{background:#fee2e2;color:#991b1b}
+
+/* CALC */
+.ci{width:100%;padding:8px 12px;font-size:14px;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;margin:8px 0;font-family:inherit}
+.ci:focus{outline:2px solid #3b82f6;border-color:#3b82f6}
+.ckb{padding:8px 20px;font-size:13px;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;color:#1a1a1a;cursor:pointer;font-family:inherit;font-weight:500}
+.ckb:hover{background:#f0f0f0}
+
+.ab{padding:10px 26px;font-size:14px;border:none;border-radius:8px;background:#1a56db;color:#fff;cursor:pointer;font-family:inherit;font-weight:600}
+.ab:hover{background:#1e40af}
+
+/* SUMMARY */
+.tr2{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid #f0f0f0;flex-wrap:wrap;gap:6px}
+.tr2:last-child{border-bottom:none}
+.pill{padding:3px 11px;border-radius:20px;font-size:12px;font-weight:600}
+.pig{background:#dcfce7;color:#166534}.pia{background:#fef3c7;color:#92400e}.pir{background:#fee2e2;color:#991b1b}
+.stat-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:1rem;text-align:center}
+.stat-label{font-size:12px;color:#888;margin-bottom:6px}
+.stat-val{font-size:24px;font-weight:700}
+
+/* HEATING CURVE SVG */
+.graph-box{background:#f9f9f9;border:1px solid #e0e0e0;border-radius:10px;padding:14px;text-align:center;margin:10px 0}
+
+@media(max-width:600px){.g2,.g3{grid-template-columns:1fr}.rag-row{flex-direction:column;align-items:flex-start}}
+@media print{.nav,.ab{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+
+<div class="nav">
+  <button class="nb on" onclick="sp('ko')">Knowledge Organiser</button>
+  <button class="nb" onclick="sp('sa')">RAG Self-Assessment</button>
+  <button class="nb" onclick="sp('dq')">Diagnostic Questions</button>
+  <button class="nb" onclick="sp('cq')">Calculation Practice</button>
+  <button class="nb" onclick="bs();sp('sm')">My Summary</button>
+</div>
+
+<!-- ══════════════════════ KNOWLEDGE ORGANISER ══════════════════ -->
+<div class="pg on" id="pg-ko">
+<h1>Energy &amp; States of Matter — Knowledge Organiser</h1>
+<p class="subtitle">GCSE Physics · Energy Stores &amp; Transfers · Power · Pressure · SHC · Particle Model · Heating Curves · Thermal Energy Transfer</p>
+
+<!-- 1. ENERGY STORES & TRANSFERS -->
+<div class="topic-banner tb-blue">1 · Energy Stores &amp; Transfers</div>
+
+<div class="st">Energy stores</div>
+<div class="card c-blue">
+  <span class="bdg b-blue">Eight energy stores</span>
+  <div class="g2" style="margin-top:8px">
+    <div>
+      <div class="row"><span class="tm">Chemical</span><span class="df">Energy stored in bonds between atoms. Released by combustion, respiration, electrochemical reactions. Examples: fuel, food, batteries.</span></div>
+      <div class="row"><span class="tm">Kinetic</span><span class="df">Energy of a moving object. Ek = ½mv². Greater mass or speed → more KE.</span></div>
+      <div class="row"><span class="tm">Gravitational PE</span><span class="df">Energy stored due to height above ground. Ep = mgh. Greater height or mass → more GPE.</span></div>
+      <div class="row"><span class="tm">Thermal (internal)</span><span class="df">Energy stored in the random motion and vibration of particles. Higher temperature → more thermal energy.</span></div>
+    </div>
+    <div>
+      <div class="row"><span class="tm">Elastic (strain)</span><span class="df">Energy stored in stretched or compressed objects (springs, elastic bands, rubber). E = ½ke².</span></div>
+      <div class="row"><span class="tm">Magnetic</span><span class="df">Stored in a magnetic field between magnets.</span></div>
+      <div class="row"><span class="tm">Electrostatic</span><span class="df">Stored between charged objects.</span></div>
+      <div class="row"><span class="tm">Nuclear</span><span class="df">Stored in the nucleus of atoms. Released in nuclear reactions (fission, fusion, radioactive decay).</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="st">Energy transfers — how energy moves between stores</div>
+<div class="card c-teal">
+  <div class="g2">
+    <div>
+      <div class="row"><span class="tm">Mechanically</span><span class="df">By a force causing movement (e.g. pushing, stretching, compressing). Work done = force × distance.</span></div>
+      <div class="row"><span class="tm">Electrically</span><span class="df">Charge moving in a circuit. E = QV (energy = charge × voltage).</span></div>
+      <div class="row"><span class="tm">By heating</span><span class="df">Conduction, convection or radiation — from hotter to cooler region.</span></div>
+      <div class="row"><span class="tm">By radiation</span><span class="df">Electromagnetic waves (light, infrared, microwaves, etc.) transfer energy without a medium.</span></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">Rockets and satellites — energy store changes</h3>
+      <div class="row"><span class="tm">Rocket launching</span><span class="df">Chemical store (fuel) → Kinetic store + Gravitational PE store + Thermal store (exhaust gases). Thrust must exceed weight.</span></div>
+      <div class="row"><span class="tm">Rocket in flight</span><span class="df">As fuel burns: chemical store decreases; KE and GPE increase. Air resistance converts some KE → thermal.</span></div>
+      <div class="row"><span class="tm">Satellite in orbit</span><span class="df">Constant speed → KE constant. Constant height → GPE constant. Gravity provides centripetal force — no energy needed to stay in orbit (ideal).</span></div>
+      <div class="row"><span class="tm">Falling object</span><span class="df">GPE → KE (+ thermal if air resistance present). At terminal velocity: GPE → thermal only.</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="st">Conservation of energy</div>
+<div class="card c-purple">
+  <span class="bdg b-purple">The law of conservation of energy</span>
+  <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:10px"><em>"Energy cannot be created or destroyed — it can only be transferred between stores or dissipated to the surroundings."</em> The total energy in a closed system remains constant.</p>
+  <div class="g2">
+    <div>
+      <div class="row"><span class="tm">Useful energy</span><span class="df">Energy transferred to the intended store. e.g. KE in a motor car engine.</span></div>
+      <div class="row"><span class="tm">Wasted energy</span><span class="df">Energy transferred to an unintended store — usually thermal energy of the surroundings (heat loss).</span></div>
+      <div class="row"><span class="tm">Efficiency</span><span class="df">% efficiency = (useful output energy ÷ total input energy) × 100. Always ≤ 100%.</span></div>
+    </div>
+    <div>
+      <div class="fbox" style="font-size:14px">Efficiency = (useful output ÷ total input) × 100%</div>
+      <div class="success" style="margin-top:8px">No machine is 100% efficient — energy is always dissipated (lost to surroundings as heat/sound). This does NOT violate conservation of energy — it is just transferred to less useful stores.</div>
+    </div>
+  </div>
+</div>
+
+<div class="st">Real-life energy transfer examples</div>
+<div class="card" style="overflow-x:auto">
+<table>
+  <thead><tr><th>Situation</th><th>Energy store(s) at start</th><th>Energy store(s) at end</th><th>Wasted energy</th></tr></thead>
+  <tbody>
+    <tr><td>Burning fuel in a car engine</td><td>Chemical</td><td>Kinetic + Gravitational PE</td><td>Thermal (heat + sound)</td></tr>
+    <tr><td>Ball thrown upward</td><td>Kinetic</td><td>Gravitational PE (at top)</td><td>Thermal (air resistance)</td></tr>
+    <tr><td>Electric lamp</td><td>Chemical (battery)/electrical</td><td>Light (radiation)</td><td>Thermal (heat)</td></tr>
+    <tr><td>Stretched spring released</td><td>Elastic</td><td>Kinetic</td><td>Thermal (vibration/sound)</td></tr>
+    <tr><td>Satellite in stable circular orbit</td><td>KE + GPE</td><td>KE + GPE (unchanged)</td><td>Negligible (no atmosphere)</td></tr>
+    <tr><td>Skydiver at terminal velocity</td><td>Gravitational PE</td><td>Thermal (surroundings)</td><td>All GPE → thermal via friction</td></tr>
+  </tbody>
+</table>
+</div>
+
+<hr class="divider">
+<!-- 2. POWER & DATA HANDLING -->
+<div class="topic-banner tb-teal">2 · Power &amp; Data Handling</div>
+
+<div class="card c-teal">
+  <span class="bdg b-teal">Power = rate of energy transfer</span>
+  <div class="g2" style="margin-top:8px">
+    <div>
+      <div class="fbox">P = E ÷ t</div>
+      <div class="row" style="margin-top:4px"><span class="tm">P</span><span class="df">Power (W — watts). 1 W = 1 J/s.</span></div>
+      <div class="row"><span class="tm">E</span><span class="df">Energy transferred (J — joules).</span></div>
+      <div class="row"><span class="tm">t</span><span class="df">Time (s — seconds). Convert minutes to seconds first.</span></div>
+      <div class="fbox-sm" style="margin-top:8px">E = P × t &nbsp;|&nbsp; t = E ÷ P</div>
+      <div class="info" style="margin-top:6px">1 kW = 1000 W. 1 MW = 1 000 000 W. Power is the rate — how quickly energy is transferred, not how much total.</div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">Data handling skills</h3>
+      <div class="row"><span class="tm">Presenting data</span><span class="df">Tables must have headings with quantity AND unit (e.g. "Time / s"). Values to same decimal places. Repeat readings in separate columns.</span></div>
+      <div class="row"><span class="tm">Anomalous result</span><span class="df">A value that does not fit the pattern of other data. Likely a measurement error. Should be circled, excluded from the mean, and noted — do NOT include in mean calculation.</span></div>
+      <div class="row"><span class="tm">Mean calculation</span><span class="df">Add all valid (non-anomalous) values and divide by the number of values. Mean = sum ÷ n. Round to appropriate significant figures.</span></div>
+      <div class="row"><span class="tm">Repeat readings</span><span class="df">Take at least 3 repeats to identify anomalies and calculate a reliable mean. More repeats = more reliable mean.</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+<!-- 3. PRESSURE -->
+<div class="topic-banner tb-purple">3 · Pressure</div>
+
+<div class="card c-purple">
+  <span class="bdg b-purple">Pressure = Force ÷ Area</span>
+  <div class="g2" style="margin-top:8px">
+    <div>
+      <div class="fbox">P = F ÷ A</div>
+      <div class="row" style="margin-top:4px"><span class="tm">P</span><span class="df">Pressure (Pa — pascals or N/m²). 1 Pa = 1 N/m².</span></div>
+      <div class="row"><span class="tm">F</span><span class="df">Force (N — newtons). Usually the weight of the object.</span></div>
+      <div class="row"><span class="tm">A</span><span class="df">Contact area (m² — square metres). Must convert cm² to m².</span></div>
+      <div class="fbox-sm" style="margin-top:8px">F = P × A &nbsp;|&nbsp; A = F ÷ P</div>
+      <div class="warn" style="margin-top:6px">Smaller contact area → HIGHER pressure for same force. This is why sharp objects (needles, knife blades) exert huge pressure.</div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">Measuring pressure — method</h3>
+      <ol style="font-size:13px;color:#444;margin-left:16px;line-height:1.9">
+        <li>Measure the force applied (using a newton meter or calculate weight = mg)</li>
+        <li>Measure the contact area (length × width in m², or use graph paper to trace the area)</li>
+        <li>Calculate: P = F ÷ A</li>
+      </ol>
+      <h3 style="margin-bottom:6px;margin-top:12px">Real-life applications</h3>
+      <div class="row"><span class="tm">Camels vs humans</span><span class="df">Camels have wide, flat feet — large area → low pressure on sand (don't sink). Humans have smaller feet → higher pressure.</span></div>
+      <div class="row"><span class="tm">Skis &amp; snowshoes</span><span class="df">Large area → low pressure → don't sink into snow.</span></div>
+      <div class="row"><span class="tm">Elephants</span><span class="df">Very heavy but huge feet → spread force over large area → manageable pressure.</span></div>
+      <div class="row"><span class="tm">Drawing pins / nails</span><span class="df">Tiny tip → tiny area → huge pressure from small force.</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+<!-- 4. SPECIFIC HEAT CAPACITY -->
+<div class="topic-banner tb-amber">4 · Specific Heat Capacity (SHC)</div>
+
+<div class="card c-amber">
+  <span class="bdg b-amber">SHC — energy per kg per °C</span>
+  <div class="g2" style="margin-top:8px">
+    <div>
+      <div class="fbox">ΔQ = m × c × ΔT</div>
+      <div class="row" style="margin-top:4px"><span class="tm">ΔQ</span><span class="df">Energy transferred (J — joules). Also written as Q or E.</span></div>
+      <div class="row"><span class="tm">m</span><span class="df">Mass (kg — kilograms). Convert grams to kg first (÷ 1000).</span></div>
+      <div class="row"><span class="tm">c</span><span class="df">Specific heat capacity (J/kg°C or J/kg K). Fixed for each material.</span></div>
+      <div class="row"><span class="tm">ΔT</span><span class="df">Temperature change (°C or K). ΔT = T_final − T_initial.</span></div>
+      <div class="fbox-sm" style="margin-top:8px">c = ΔQ ÷ (m × ΔT) &nbsp;|&nbsp; ΔT = ΔQ ÷ (m × c)</div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">Key SHC values to know</h3>
+      <div class="row"><span class="tm">Water</span><span class="df">4200 J/kg°C — highest common SHC. Heats/cools slowly. Used as coolant.</span></div>
+      <div class="row"><span class="tm">Aluminium</span><span class="df">900 J/kg°C. Heats up faster than water for same energy input.</span></div>
+      <div class="row"><span class="tm">Copper</span><span class="df">390 J/kg°C. Very low — heats and cools rapidly.</span></div>
+      <div class="row"><span class="tm">Iron / steel</span><span class="df">450 J/kg°C.</span></div>
+      <h3 style="margin-bottom:6px;margin-top:10px">Advantages of high SHC</h3>
+      <ul style="font-size:13px;color:#444;margin-left:16px;line-height:1.8">
+        <li>Water in central heating — absorbs large amounts of heat without large temperature rise, then releases it slowly in radiators</li>
+        <li>Water in car radiators — effective coolant; removes large amounts of heat from the engine</li>
+        <li>Coastal regions — sea has high SHC; moderates local climate (cooler summers, warmer winters)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="st">SHC practical — method to determine c experimentally</div>
+<div class="card c-amber">
+  <span class="bdg b-amber">Required practical</span>
+  <div class="g2">
+    <div>
+      <ol style="font-size:13px;color:#444;margin-left:16px;line-height:1.9">
+        <li>Measure the mass of the material (m) in kg using a balance</li>
+        <li>Insulate the sample to minimise energy losses to surroundings</li>
+        <li>Insert a thermometer and an electrical immersion heater</li>
+        <li>Connect the heater to a power supply with a voltmeter (V) and ammeter (A)</li>
+        <li>Record initial temperature (T₁)</li>
+        <li>Switch on — record time (t), voltage (V) and current (I)</li>
+        <li>Record final temperature (T₂) after a set time</li>
+        <li>Calculate energy: Q = V × I × t</li>
+        <li>Calculate c = Q ÷ (m × ΔT)</li>
+      </ol>
+    </div>
+    <div>
+      <div class="fbox-sm">Energy from heater: Q = V × I × t</div>
+      <div class="warn" style="margin-top:8px">Experimental value of c is always HIGHER than the true value — some energy is lost to heating the container, thermometer and the surrounding air. The block is not perfectly insulated.</div>
+      <div class="info" style="margin-top:8px">To reduce error: use more insulation; use a lid; ensure good thermal contact between heater and block; allow time for temperature to equalise before reading.</div>
+      <div class="success" style="margin-top:8px">Plot temperature (y) against time (x). Gradient = rate of temperature rise. Steeper gradient = higher power input or lower mass/SHC.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+<!-- 5. PARTICLE MODEL -->
+<div class="topic-banner tb-coral">5 · Particle Model of Matter</div>
+
+<div class="card c-coral">
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr>
+      <th>Property</th>
+      <th style="color:#085041">Solid</th>
+      <th style="color:#1e40af">Liquid</th>
+      <th style="color:#6d28d9">Gas</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Particle arrangement</td><td>Regular, close-packed lattice</td><td>Irregular, close together</td><td>Random, widely spaced</td></tr>
+      <tr><td>Particle motion</td><td>Vibrate in fixed positions only</td><td>Flow and slide past each other</td><td>Rapid, random, free movement in all directions</td></tr>
+      <tr><td>Intermolecular forces</td><td>Very strong — hold lattice</td><td>Moderate</td><td>Negligible</td></tr>
+      <tr><td>Shape</td><td>Fixed shape</td><td>Takes container shape</td><td>Fills entire container</td></tr>
+      <tr><td>Volume</td><td>Fixed</td><td>Fixed</td><td>Expands to fill container</td></tr>
+      <tr><td>Compressible?</td><td>No — particles touch</td><td>No — particles close</td><td>Yes — large spaces between</td></tr>
+      <tr><td>Density</td><td>High</td><td>High (slightly lower than solid)</td><td>Very low</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="st">Changes of state — melting, boiling, freezing, condensing</div>
+<div class="card c-coral">
+  <div class="g2">
+    <div>
+      <div class="row"><span class="tm">Melting</span><span class="df">Solid → Liquid. Particles gain energy to overcome lattice bonds. Begins at melting point. Temperature stays constant during melting.</span></div>
+      <div class="row"><span class="tm">Boiling</span><span class="df">Liquid → Gas. Particles gain enough energy to fully escape intermolecular forces. Occurs at boiling point throughout the liquid.</span></div>
+      <div class="row"><span class="tm">Evaporation</span><span class="df">Liquid → Gas. Occurs below boiling point at surface only. Faster particles escape. Cools the liquid.</span></div>
+    </div>
+    <div>
+      <div class="row"><span class="tm">Condensing</span><span class="df">Gas → Liquid. Particles lose energy, slow down, intermolecular forces reform. Releases latent heat.</span></div>
+      <div class="row"><span class="tm">Freezing</span><span class="df">Liquid → Solid. Particles lose energy, slow down enough to form lattice structure.</span></div>
+      <div class="row"><span class="tm">Sublimation</span><span class="df">Solid → Gas directly (e.g. dry ice/CO₂). No liquid stage.</span></div>
+    </div>
+  </div>
+  <div class="warn" style="margin-top:10px">During any change of state, temperature remains <strong>constant</strong> even though energy is still being supplied. Energy is used to break (or form) intermolecular bonds — not to increase particle kinetic energy. This is called <strong>latent heat</strong>.</div>
+</div>
+
+<div class="st">Using particle model to explain observations</div>
+<div class="card c-sky">
+  <div class="g2">
+    <div>
+      <div class="row"><span class="tm">Pressure in gases</span><span class="df">Gas particles collide with container walls → exert force per unit area = pressure. More collisions or harder collisions → higher pressure.</span></div>
+      <div class="row"><span class="tm">Gases are compressible</span><span class="df">Large spaces between gas particles — can be pushed closer together. Solids/liquids already close-packed.</span></div>
+      <div class="row"><span class="tm">Diffusion in gases</span><span class="df">Gas particles move rapidly and randomly → spread out from high to low concentration. Faster at higher temperature.</span></div>
+    </div>
+    <div>
+      <div class="row"><span class="tm">Thermal expansion</span><span class="df">Heating → particles vibrate more → take up more space → material expands. Solids expand least; gases expand most.</span></div>
+      <div class="row"><span class="tm">Why solids hold shape</span><span class="df">Strong intermolecular forces hold particles in fixed lattice positions — particles can only vibrate, not move past each other.</span></div>
+      <div class="row"><span class="tm">Dissolving</span><span class="df">Solute particles spread between solvent particles — space between liquid particles allows this.</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+<!-- 6. HEATING CURVES -->
+<div class="topic-banner tb-indigo">6 · Heating Curves &amp; Graphs</div>
+
+<div class="card c-indigo">
+  <span class="bdg b-indigo">Temperature vs time graph — key features</span>
+  <div class="graph-box">
+    <svg viewBox="0 0 580 240" width="100%" style="max-width:580px;display:block;margin:0 auto">
+      <defs>
+        <marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#666"/>
+        </marker>
+      </defs>
+      <!-- axes -->
+      <line x1="50" y1="210" x2="550" y2="210" stroke="#666" stroke-width="1.5" marker-end="url(#ah)"/>
+      <line x1="50" y1="210" x2="50" y2="15" stroke="#666" stroke-width="1.5" marker-end="url(#ah)"/>
+      <!-- axis labels -->
+      <text x="298" y="228" font-size="13" fill="#555" text-anchor="middle" font-family="system-ui">Time (s)</text>
+      <text x="18" y="115" font-size="13" fill="#555" text-anchor="middle" font-family="system-ui" transform="rotate(-90,18,115)">Temperature (°C)</text>
+      <!-- heating curve segments -->
+      <!-- solid heating -->
+      <line x1="55" y1="190" x2="130" y2="145" stroke="#3b82f6" stroke-width="3"/>
+      <!-- melting (flat) -->
+      <line x1="130" y1="145" x2="230" y2="145" stroke="#ef4444" stroke-width="3"/>
+      <!-- liquid heating -->
+      <line x1="230" y1="145" x2="330" y2="80" stroke="#3b82f6" stroke-width="3"/>
+      <!-- boiling (flat) -->
+      <line x1="330" y1="80" x2="440" y2="80" stroke="#f97316" stroke-width="3"/>
+      <!-- gas heating -->
+      <line x1="440" y1="80" x2="540" y2="35" stroke="#3b82f6" stroke-width="3"/>
+      <!-- dashed horizontal guides -->
+      <line x1="50" y1="145" x2="130" y2="145" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3"/>
+      <line x1="50" y1="80" x2="330" y2="80" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3"/>
+      <!-- temp labels -->
+      <text x="44" y="149" font-size="11" fill="#991b1b" text-anchor="end" font-family="system-ui">Melting</text>
+      <text x="44" y="140" font-size="11" fill="#991b1b" text-anchor="end" font-family="system-ui">point</text>
+      <text x="44" y="84" font-size="11" fill="#9a3412" text-anchor="end" font-family="system-ui">Boiling</text>
+      <text x="44" y="75" font-size="11" fill="#9a3412" text-anchor="end" font-family="system-ui">point</text>
+      <!-- section labels -->
+      <text x="90" y="132" font-size="11" fill="#1e40af" text-anchor="middle" font-family="system-ui" font-weight="600">Solid</text>
+      <text x="90" y="143" font-size="11" fill="#1e40af" text-anchor="middle" font-family="system-ui">heating</text>
+      <text x="180" y="133" font-size="11" fill="#991b1b" text-anchor="middle" font-family="system-ui" font-weight="600">MELTING</text>
+      <text x="180" y="145" font-size="11" fill="#991b1b" text-anchor="middle" font-family="system-ui">(T constant)</text>
+      <text x="280" y="95" font-size="11" fill="#1e40af" text-anchor="middle" font-family="system-ui" font-weight="600">Liquid</text>
+      <text x="280" y="106" font-size="11" fill="#1e40af" text-anchor="middle" font-family="system-ui">heating</text>
+      <text x="385" y="68" font-size="11" fill="#9a3412" text-anchor="middle" font-family="system-ui" font-weight="600">BOILING</text>
+      <text x="385" y="80" font-size="11" fill="#9a3412" text-anchor="middle" font-family="system-ui">(T constant)</text>
+      <text x="492" y="40" font-size="11" fill="#1e40af" text-anchor="middle" font-family="system-ui" font-weight="600">Gas</text>
+      <text x="492" y="51" font-size="11" fill="#1e40af" text-anchor="middle" font-family="system-ui">heating</text>
+    </svg>
+  </div>
+  <div class="g2" style="margin-top:12px">
+    <div>
+      <h3 style="margin-bottom:8px">Sloped sections (temperature rising)</h3>
+      <div class="row"><span class="tm">Solid heating</span><span class="df">Energy increases particle vibration — KE increases — temperature rises.</span></div>
+      <div class="row"><span class="tm">Liquid heating</span><span class="df">Energy increases random motion of liquid particles — KE increases — temperature rises.</span></div>
+      <div class="row"><span class="tm">Gas heating</span><span class="df">Energy increases speed of gas particles — KE increases — temperature rises.</span></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">Flat sections (temperature constant)</h3>
+      <div class="row"><span class="tm">At melting point</span><span class="df">Energy breaks intermolecular bonds in lattice — solid → liquid. Temperature stays constant. This energy is called LATENT HEAT OF FUSION.</span></div>
+      <div class="row"><span class="tm">At boiling point</span><span class="df">Energy overcomes all intermolecular forces — liquid → gas. Temperature stays constant. This is LATENT HEAT OF VAPORISATION.</span></div>
+      <div class="success" style="margin-top:6px">On a cooling curve, the flat sections appear at the same temperatures but energy is released (not absorbed) as bonds reform.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+<!-- 7. THERMAL ENERGY TRANSFER -->
+<div class="topic-banner tb-sky">7 · Thermal Energy Transfer</div>
+
+<div class="card c-sky">
+  <div class="g2">
+    <div>
+      <span class="bdg b-sky">Conduction</span>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:8px">Transfer of thermal energy through a solid (or between solids in contact) by particle vibration. Hot particles vibrate more → collide with neighbours → pass on energy.</p>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:6px"><strong>Metals conduct very well</strong> — free electrons carry thermal energy rapidly through the structure (in addition to particle vibration).</p>
+      <div class="row"><span class="tm">Good conductors</span><span class="df">Metals (copper, aluminium, iron). Used in: saucepans, radiators, heat sinks, soldering irons.</span></div>
+      <div class="row"><span class="tm">Poor conductors</span><span class="df">Wood, plastic, glass, air, wool. Used as insulators: handles, building insulation, double glazing.</span></div>
+    </div>
+    <div>
+      <span class="bdg b-teal">Convection</span>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:8px">Transfer of thermal energy through fluids (liquids and gases) by the bulk movement of the fluid itself.</p>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:6px"><strong>Mechanism:</strong> Fluid heats up → expands → becomes less dense → rises. Cooler, denser fluid flows in to replace it → creates a convection current.</p>
+      <div class="row"><span class="tm">Examples</span><span class="df">Heating a room (hot air rises from radiator, circulates). Boiling water. Sea breezes. Weather systems.</span></div>
+      <div class="row"><span class="tm">Cannot occur in</span><span class="df">Solids — particles cannot flow. Only works in fluids (liquids and gases).</span></div>
+    </div>
+  </div>
+  <div class="g2" style="margin-top:14px">
+    <div>
+      <span class="bdg b-indigo">Radiation (Infrared)</span>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:8px">Transfer of thermal energy by infrared electromagnetic waves. Does NOT require a medium — can travel through a vacuum (e.g. heat from the Sun).</p>
+      <div class="row"><span class="tm">Matt black surface</span><span class="df">Best absorber AND best emitter of infrared radiation. Maximum emission and absorption.</span></div>
+      <div class="row"><span class="tm">Shiny white surface</span><span class="df">Best reflector. Worst absorber and worst emitter. Minimum emission and absorption.</span></div>
+      <div class="row"><span class="tm">All objects</span><span class="df">Emit and absorb infrared. Hotter objects emit more radiation at shorter wavelengths.</span></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">Real-life thermal transfer applications</h3>
+      <div class="row"><span class="tm">Snow on roofs</span><span class="df">Snow is white/light-coloured — poor emitter of IR. Stays on roof longer because less heat is radiated away. Also insulates: trapped air is a poor conductor.</span></div>
+      <div class="row"><span class="tm">Metal surfaces</span><span class="df">Shiny metal (e.g. aluminium foil, emergency blanket) reflects IR → reduces heat loss by radiation.</span></div>
+      <div class="row"><span class="tm">Vacuum flask</span><span class="df">Double-walled glass with vacuum between walls (no conduction/convection). Silvered walls (reduce radiation). Stopper reduces convection at top.</span></div>
+      <div class="row"><span class="tm">Solar panels</span><span class="df">Matt black surface — maximises absorption of solar radiation.</span></div>
+      <div class="row"><span class="tm">Loft insulation</span><span class="df">Fibreglass traps air — air is poor conductor. Reduces conduction heat loss through roof.</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="st">Key equations summary</div>
+<div class="card">
+  <div class="g3">
+    <div style="text-align:center"><div class="fbox" style="font-size:14px">P = E ÷ t</div><p style="font-size:12px;color:#666;margin-top:4px">Power (W) = Energy (J) ÷ Time (s)</p></div>
+    <div style="text-align:center"><div class="fbox" style="font-size:14px">P = F ÷ A</div><p style="font-size:12px;color:#666;margin-top:4px">Pressure (Pa) = Force (N) ÷ Area (m²)</p></div>
+    <div style="text-align:center"><div class="fbox" style="font-size:14px">ΔQ = mcΔT</div><p style="font-size:12px;color:#666;margin-top:4px">Energy (J) = mass (kg) × SHC (J/kg°C) × ΔT (°C)</p></div>
+    <div style="text-align:center"><div class="fbox" style="font-size:14px">Q = VIt</div><p style="font-size:12px;color:#666;margin-top:4px">Electrical energy — used in SHC practical</p></div>
+    <div style="text-align:center"><div class="fbox" style="font-size:14px">Eff = Eout/Ein × 100</div><p style="font-size:12px;color:#666;margin-top:4px">Efficiency (%) — always ≤ 100%</p></div>
+    <div style="text-align:center"><div class="fbox" style="font-size:14px">m = V × ρ</div><p style="font-size:12px;color:#666;margin-top:4px">mass = volume × density (for unit conversions)</p></div>
+  </div>
+</div>
+
+<div style="text-align:center;margin-top:24px"><button class="ab" onclick="sp('sa')">Go to RAG Self-Assessment →</button></div>
+</div><!-- end KO -->
+
+<!-- ══════════════════════ RAG SELF ASSESSMENT ══════════════════ -->
+<div class="pg" id="pg-sa">
+<h1>RAG Self-Assessment Checklist</h1>
+<p class="subtitle">Rate every skill exactly as on your checklist: <strong style="color:#16a34a">Green</strong> = confident · <strong style="color:#d97706">Amber</strong> = unsure · <strong style="color:#dc2626">Red</strong> = not yet learned</p>
+<div id="sa-wrap"></div>
+<div style="text-align:center;margin-top:20px"><button class="ab" onclick="sp('dq')">Diagnostic Questions →</button></div>
+</div>
+
+<!-- ══════════════════════ DIAGNOSTIC ══════════════════════════ -->
+<div class="pg" id="pg-dq">
+<h1>Diagnostic Questions</h1>
+<p class="subtitle">20 questions covering all eight topics. Select your answer for instant feedback.</p>
+<div id="dq-wrap"></div>
+<div style="text-align:center;margin-top:20px"><button class="ab" onclick="sp('cq')">Calculation Practice →</button></div>
+</div>
+
+<!-- ══════════════════════ CALCULATIONS ══════════════════════════ -->
+<div class="pg" id="pg-cq">
+<h1>Calculation Practice</h1>
+<p class="subtitle">12 calculation questions — show working on paper, then type your numerical answer.</p>
+<div id="cq-wrap"></div>
+<div style="text-align:center;margin-top:20px"><button class="ab" onclick="bs();sp('sm')">View My Summary →</button></div>
+</div>
+
+<!-- ══════════════════════ SUMMARY ══════════════════════════════ -->
+<div class="pg" id="pg-sm">
+<h1>My Summary</h1>
+<p class="subtitle">Your personalised performance breakdown based on RAG ratings and question responses</p>
+<div id="sm-wrap"></div>
+</div>
+
+</div>
+
+<script>
+var RAG_SECTIONS=[
+  {id:'sec1',label:'Energy Stores & Transfers',cls:'rh-blue',skills:[
+    {id:'r1a',tx:'Identify all eight energy stores: chemical, kinetic, gravitational PE, thermal, elastic, magnetic, electrostatic, nuclear.'},
+    {id:'r1b',tx:'Describe how energy stores change in rockets (chemical → KE + GPE + thermal) and satellites (KE + GPE constant in ideal orbit).'},
+    {id:'r1c',tx:'Apply conservation of energy: energy is never created or destroyed, only transferred or dissipated to surroundings.'},
+    {id:'r1d',tx:'Explain energy transfers in real situations (falling objects, burning fuel, springs) identifying useful and wasted energy.'}
+  ]},
+  {id:'sec2',label:'Power & Data Handling',cls:'rh-teal',skills:[
+    {id:'r2a',tx:'Define power as rate of energy transfer and apply P = E ÷ t (with E in J, t in s, P in W).'},
+    {id:'r2b',tx:'Present results in a correctly formatted table with headings, units, and consistent decimal places.'},
+    {id:'r2c',tx:'Identify anomalous results in a data set, explain why they should be excluded, and state a likely cause.'},
+    {id:'r2d',tx:'Calculate a mean value correctly by excluding anomalous results and dividing sum by number of valid values.'}
+  ]},
+  {id:'sec3',label:'Pressure',cls:'rh-purple',skills:[
+    {id:'r3a',tx:'Define pressure as force per unit area and state its unit (Pa or N/m²).'},
+    {id:'r3b',tx:'Describe a method to measure pressure experimentally (measure force, measure area, calculate P = F ÷ A).'},
+    {id:'r3c',tx:'Calculate pressure using P = F ÷ A and rearrangements to find F or A.'},
+    {id:'r3d',tx:'Apply pressure to real-life contexts: explain why animals with larger feet (camels, elephants) exert less pressure; why sharp objects exert more.'}
+  ]},
+  {id:'sec4',label:'Specific Heat Capacity (SHC)',cls:'rh-amber',skills:[
+    {id:'r4a',tx:'Define SHC as the energy needed to raise 1 kg of a substance by 1 °C, and state its unit (J/kg°C).'},
+    {id:'r4b',tx:'Describe the experimental method to determine SHC including how to calculate energy input (Q = VIt) and sources of error.'},
+    {id:'r4c',tx:'Apply ΔQ = mcΔT in all rearrangements to find Q, m, c or ΔT; convert grams to kg before substituting.'},
+    {id:'r4d',tx:'Explain advantages of high SHC materials (water as coolant in car radiators and central heating; coastal climate moderation).'}
+  ]},
+  {id:'sec5',label:'Particle Model of Matter',cls:'rh-coral',skills:[
+    {id:'r5a',tx:'Describe particle arrangement in solids (regular lattice) and liquids (irregular, close-packed) and gases (random, widely spaced).'},
+    {id:'r5b',tx:'Compare particle movement: solids vibrate in fixed positions; liquids flow and slide; gases move rapidly and randomly.'},
+    {id:'r5c',tx:'Explain what happens during melting — particles gain energy to break lattice bonds; temperature stays constant during change of state.'},
+    {id:'r5d',tx:'Use the particle model to explain gas pressure, compressibility, thermal expansion, and diffusion.'}
+  ]},
+  {id:'sec6',label:'Heating Curves & Graphs',cls:'rh-indigo',skills:[
+    {id:'r6a',tx:'Sketch a temperature vs time graph for a substance being heated from solid through liquid to gas, labelling all sections.'},
+    {id:'r6b',tx:'Identify melting and boiling regions on a heating curve graph (flat sections at fixed temperatures).'},
+    {id:'r6c',tx:'Explain why temperature remains constant during a phase change — energy is used to break bonds, not increase KE.'},
+    {id:'r6d',tx:'Interpret heating graphs: explain sloped sections (KE increasing, temperature rising) and flat sections (latent heat).'}
+  ]},
+  {id:'sec7',label:'Thermal Energy Transfer',cls:'rh-sky',skills:[
+    {id:'r7a',tx:'Explain conduction (particle vibration; free electrons in metals), convection (density differences in fluids) and radiation (IR waves, no medium needed).'},
+    {id:'r7b',tx:'Understand the effect of surface colour and texture: matt black = best absorber and emitter; shiny white = best reflector, worst absorber/emitter.'},
+    {id:'r7c',tx:'Explain how convection currents form (fluid heats → expands → less dense → rises; cool fluid sinks and replaces it).'},
+    {id:'r7d',tx:'Apply heat transfer to real-life examples: vacuum flask, loft insulation, snow on roofs, solar panels, emergency blankets, metal surfaces.'}
+  ]},
+  {id:'sec8',label:'Energy Calculations',cls:'rh-green',skills:[
+    {id:'r8a',tx:'Apply ΔQ = mcΔT correctly, showing all working and using correct units (J, kg, J/kg°C, °C).'},
+    {id:'r8b',tx:'Convert units correctly: grams → kg (÷ 1000); minutes → seconds (× 60); kJ → J (× 1000).'},
+    {id:'r8c',tx:'Show working clearly in multi-step calculations: write formula, substitute values with units, calculate answer.'},
+    {id:'r8d',tx:'Apply ΔQ = mcΔT to temperature change problems, including finding the temperature change or final temperature.'}
+  ]}
+];
+
+var DQ=[
+  {id:'d1',tp:'Energy Stores',
+   q:'A stretched rubber band is released and flicks a ball into the air. What is the correct sequence of energy store changes?',
+   os:['Chemical → Kinetic → Gravitational PE','Elastic → Kinetic → Gravitational PE (+ some thermal)','Thermal → Kinetic → Elastic','Gravitational PE → Kinetic → Elastic'],
+   c:1,ex:'The rubber band stores elastic (strain) energy when stretched. When released, this converts to kinetic energy of the ball. As the ball rises, kinetic energy converts to gravitational PE. Some thermal energy is dissipated due to air resistance throughout.'},
+  {id:'d2',tp:'Rockets & Satellites',
+   q:'A rocket burns fuel to launch into orbit. Which statement correctly describes the energy changes?',
+   os:['Chemical store decreases; kinetic and gravitational PE stores increase','Gravitational PE decreases; chemical store increases','Kinetic energy stays constant throughout the launch','Only thermal energy is produced during combustion'],
+   c:0,ex:'As the rocket burns fuel, the chemical energy store decreases. The rocket gains speed (kinetic store increases) and gains height (gravitational PE store increases). Some energy is wasted as thermal energy in the exhaust gases and due to air resistance.'},
+  {id:'d3',tp:'Conservation of Energy',
+   q:'A car engine converts 50,000 J of chemical energy from fuel. 35,000 J is used to move the car. What is the efficiency of the engine?',
+   os:['35%','50%','70%','30%'],
+   c:2,ex:'Efficiency = (useful output ÷ total input) × 100 = (35,000 ÷ 50,000) × 100 = 70%. The remaining 30% (15,000 J) is wasted as heat and sound. This does not violate conservation of energy — it is simply transferred to less useful stores.'},
+  {id:'d4',tp:'Power',
+   q:'A kettle transfers 162,000 J of energy in 3 minutes. What is the power of the kettle?',
+   os:['54,000 W','900 W','2700 W','162 W'],
+   c:1,ex:'P = E ÷ t = 162,000 ÷ (3 × 60) = 162,000 ÷ 180 = 900 W. Always convert time to seconds: 3 minutes = 180 s.'},
+  {id:'d5',tp:'Anomalous Results',
+   q:'A student records these five readings for the time a ball takes to fall: 1.2 s, 1.3 s, 1.2 s, 2.8 s, 1.3 s. Which value is anomalous and what is the correct mean?',
+   os:['1.2 s is anomalous; mean = 1.27 s','2.8 s is anomalous; mean = 1.25 s','1.3 s is anomalous; mean = 1.2 s','All values are valid; mean = 1.56 s'],
+   c:1,ex:'2.8 s is clearly anomalous — it does not fit the pattern of the other four values (all around 1.2–1.3 s). Exclude it. Mean of valid readings = (1.2 + 1.3 + 1.2 + 1.3) ÷ 4 = 5.0 ÷ 4 = 1.25 s.'},
+  {id:'d6',tp:'Pressure — definition',
+   q:'Which of the following correctly defines pressure?',
+   os:['Force multiplied by area','Force divided by area (P = F ÷ A), measured in Pa (N/m²)','Area divided by force','Force plus area'],
+   c:1,ex:'Pressure = Force ÷ Area. Units: Pa (pascals) or N/m². 1 Pa = 1 N/m². Smaller area means greater pressure for the same force — this is why sharp objects cut easily.'},
+  {id:'d7',tp:'Pressure — real life',
+   q:'Why does a person wearing snowshoes not sink into snow as easily as a person in ordinary shoes?',
+   os:['Snowshoes are lighter so exert less force','Snowshoes have a much larger area, so pressure on the snow is lower for the same body weight','Snowshoes are made of a different material that repels snow','The person walks differently in snowshoes, reducing force'],
+   c:1,ex:'P = F ÷ A. The body weight (force) is the same. Snowshoes have a much larger area than ordinary shoes. Greater area → less pressure. Lower pressure means the snow is less likely to be compressed and the person does not sink.'},
+  {id:'d8',tp:'SHC — definition',
+   q:'Which statement correctly defines specific heat capacity?',
+   os:['The total energy needed to heat a substance to boiling','The energy needed to raise 1 kg of a substance by 1 °C','The energy needed to melt 1 kg of a substance','The rate of energy transfer through a material'],
+   c:1,ex:'Specific heat capacity (c) is the energy required to raise the temperature of 1 kg of a substance by 1 °C (or 1 K). It is measured in J/kg°C. Higher SHC = more energy needed per kg per degree.'},
+  {id:'d9',tp:'SHC — calculation',
+   q:'How much energy is needed to heat 2 kg of water (c = 4200 J/kg°C) from 20°C to 80°C?',
+   os:['504 J','8400 J','504,000 J','168,000 J'],
+   c:2,ex:'ΔQ = mcΔT = 2 × 4200 × (80 − 20) = 2 × 4200 × 60 = 504,000 J. ΔT = 80 − 20 = 60°C. Always calculate the temperature CHANGE, not just the final temperature.'},
+  {id:'d10',tp:'SHC — practical error',
+   q:'In an experiment to measure the SHC of aluminium, the calculated value is higher than the accepted value. Why?',
+   os:['The heater was too powerful','The mass of the block was too small','Some energy was lost to the surroundings (container, air) and was not all used to heat the aluminium','The voltmeter reading was incorrect'],
+   c:2,ex:'In the SHC practical, not all electrical energy goes into heating the metal block — some heats the container, thermometer and surrounding air. This means Q (measured) is larger than Q (absorbed by metal), giving a calculated c that is too high.'},
+  {id:'d11',tp:'Particle Model',
+   q:'Why can gases be compressed but solids cannot?',
+   os:['Gas particles are lighter than solid particles','There are large spaces between gas particles that can be reduced; solid particles are already close-packed','Gas particles move faster so they can be forced together','Solid particles have no energy'],
+   c:1,ex:'Gas particles are widely spaced with negligible intermolecular forces — there is plenty of empty space between them that can be reduced by applying pressure. Solid and liquid particles are already close-packed with very little space between them — they resist compression.'},
+  {id:'d12',tp:'Particle Model — melting',
+   q:'What happens to the particles in a solid when it melts?',
+   os:['Particles gain energy, move faster and break free from fixed lattice positions to flow freely','Particles shrink and get closer together','Particles stop vibrating completely','Particles gain mass and expand'],
+   c:0,ex:'During melting, energy is supplied to particles. This overcomes the intermolecular forces holding particles in the lattice. Particles gain enough energy to break free from fixed positions and can now flow past each other — the solid becomes a liquid.'},
+  {id:'d13',tp:'Heating Curves',
+   q:'On a heating curve (temperature vs time graph), what does a horizontal (flat) section represent?',
+   os:['The heater has been switched off','The substance is heating rapidly','A change of state — temperature stays constant as energy breaks or forms intermolecular bonds (latent heat)','The substance has reached its maximum temperature'],
+   c:2,ex:'During a change of state (melting or boiling), temperature remains constant even though energy is being supplied. This is because the energy goes into breaking intermolecular bonds rather than increasing particle kinetic energy. This energy is called latent heat.'},
+  {id:'d14',tp:'Heating Curves — interpreting',
+   q:'A substance is being heated and shows two flat sections on the temperature-time graph. What does each flat section represent?',
+   os:['Cooling and freezing','Melting (solid → liquid) and boiling (liquid → gas)','The substance absorbing and releasing energy simultaneously','Conduction and convection happening at the same time'],
+   c:1,ex:'The first flat section is the melting point (solid → liquid). The second flat section is the boiling point (liquid → gas). Both flat sections show a change of state where temperature stays constant as latent heat is absorbed to break intermolecular bonds.'},
+  {id:'d15',tp:'Conduction',
+   q:'Why do metals conduct heat much better than non-metals?',
+   os:['Metal atoms are heavier and vibrate more','Metals have free (delocalised) electrons that can move rapidly and transfer thermal energy quickly in addition to particle vibration','Metal particles are closer together than non-metals','Metals have a lower specific heat capacity'],
+   c:1,ex:'Metals conduct heat by two mechanisms: (1) particle vibration — same as non-metals, (2) free (delocalised) electrons — these can move rapidly through the metal structure, colliding with atoms and transferring kinetic energy much more quickly. Non-metals only have mechanism (1).'},
+  {id:'d16',tp:'Convection',
+   q:'Why does hot air rise in a room heated by a radiator?',
+   os:['Hot air particles are lighter individually','Hot air expands, becomes less dense than surrounding cooler air, and rises due to buoyancy','Heat always moves upward','The radiator pushes air upward mechanically'],
+   c:1,ex:'When air is heated it expands (particles move further apart on average). Its density decreases (same mass, larger volume). Being less dense than the surrounding cooler air, it experiences an upward buoyancy force and rises. Cooler, denser air flows in at the bottom to replace it — creating a convection current.'},
+  {id:'d17',tp:'Radiation — colour',
+   q:'Two identical metal cans — one painted matt black, one shiny silver — are filled with hot water. Which cools faster and why?',
+   os:['Shiny silver — it reflects heat back in','Matt black — it emits infrared radiation more effectively than the shiny surface','They cool at the same rate — colour doesn\'t matter','Shiny silver — it conducts heat better'],
+   c:1,ex:'Matt black surfaces are the best emitters of infrared radiation. The matt black can radiates more heat per second than the shiny silver can (which reflects much of the IR). Therefore the matt black can cools faster. This is why good emitters are matt black and good reflectors are shiny/silver.'},
+  {id:'d18',tp:'Thermal Transfer — real life',
+   q:'Why does snow remain on a roof longer on a cold, clear night than a cold, cloudy night?',
+   os:['Clouds reflect heat back to the roof, melting the snow faster','Snow emits infrared radiation to a clear sky more freely on a clear night (no clouds to absorb and re-emit), so the snow cools further and stays frozen longer','It is colder when cloudy so snow melts faster','Wind causes more melting on clear nights'],
+   c:1,ex:'On a clear night, the snow can emit infrared radiation directly to space — there are no clouds to absorb and re-emit some radiation back. This means the snow loses more energy and stays colder/frozen longer. On a cloudy night, clouds absorb IR from the snow and re-emit some back, keeping the snow slightly warmer.'},
+  {id:'d19',tp:'Energy Calculations — units',
+   q:'A 500 g block of copper (c = 390 J/kg°C) is heated from 25°C to 85°C. What energy is required?',
+   os:['11,700 J','23,400 J','11.7 J','1170 J'],
+   c:0,ex:'First convert mass: 500 g = 0.5 kg. ΔT = 85 − 25 = 60°C. ΔQ = mcΔT = 0.5 × 390 × 60 = 11,700 J. Always convert grams to kilograms before using the formula.'},
+  {id:'d20',tp:'Energy Calculations — find temperature',
+   q:'12,600 J of energy is supplied to 1.4 kg of a liquid with SHC = 4200 J/kg°C. What is the temperature rise?',
+   os:['2.1°C','21°C','0.47°C','126°C'],
+   c:1,ex:'ΔT = ΔQ ÷ (m × c) = 12,600 ÷ (1.4 × 4200) = 12,600 ÷ 5880 = 2.14°C ≈ 2.1°C. Rearrange ΔQ = mcΔT to ΔT = ΔQ ÷ (mc).'}
+];
+
+var CQ=[
+  {id:'c1',tp:'Power',q:'A motor transfers 45,000 J of energy in 5 minutes. Calculate its power in watts.',ans:150,tol:1,unit:'W',wk:'P = E ÷ t = 45,000 ÷ (5 × 60) = 45,000 ÷ 300 = 150 W'},
+  {id:'c2',tp:'Power — find energy',q:'A 2000 W electric heater runs for 15 minutes. Calculate the energy it transfers in joules.',ans:1800000,tol:100,unit:'J',wk:'E = P × t = 2000 × (15 × 60) = 2000 × 900 = 1,800,000 J'},
+  {id:'c3',tp:'Pressure — find P',q:'A force of 600 N acts on an area of 0.3 m². Calculate the pressure in Pa.',ans:2000,tol:1,unit:'Pa',wk:'P = F ÷ A = 600 ÷ 0.3 = 2000 Pa'},
+  {id:'c4',tp:'Pressure — find A',q:'A pressure of 500 Pa is exerted by a force of 250 N. Calculate the contact area in m².',ans:0.5,tol:0.005,unit:'m²',wk:'A = F ÷ P = 250 ÷ 500 = 0.5 m²'},
+  {id:'c5',tp:'Pressure — find F',q:'A surface has an area of 0.04 m² and experiences a pressure of 3000 Pa. Calculate the force in N.',ans:120,tol:0.5,unit:'N',wk:'F = P × A = 3000 × 0.04 = 120 N'},
+  {id:'c6',tp:'SHC — find Q',q:'Calculate the energy needed to heat 3 kg of water (c = 4200 J/kg°C) from 15°C to 95°C. Give your answer in joules.',ans:1008000,tol:200,unit:'J',wk:'ΔQ = mcΔT = 3 × 4200 × (95 − 15) = 3 × 4200 × 80 = 1,008,000 J'},
+  {id:'c7',tp:'SHC — find c',q:'5400 J of energy heats 2 kg of a metal by 6°C. Calculate the specific heat capacity in J/kg°C.',ans:450,tol:1,unit:'J/kg°C',wk:'c = ΔQ ÷ (m × ΔT) = 5400 ÷ (2 × 6) = 5400 ÷ 12 = 450 J/kg°C'},
+  {id:'c8',tp:'SHC — find ΔT',q:'A 0.5 kg block of aluminium (c = 900 J/kg°C) receives 13,500 J of energy. Calculate the temperature rise in °C.',ans:30,tol:0.2,unit:'°C',wk:'ΔT = ΔQ ÷ (m × c) = 13,500 ÷ (0.5 × 900) = 13,500 ÷ 450 = 30°C'},
+  {id:'c9',tp:'SHC — unit conversion',q:'A 750 g block of iron (c = 450 J/kg°C) is heated from 20°C to 100°C. Calculate the energy required in joules. (Convert mass to kg first.)',ans:27000,tol:50,unit:'J',wk:'m = 750 g = 0.75 kg. ΔT = 100 − 20 = 80°C. ΔQ = mcΔT = 0.75 × 450 × 80 = 27,000 J'},
+  {id:'c10',tp:'SHC — electrical energy',q:'In an SHC experiment, a heater operates at 12 V and 2.5 A for 8 minutes. Calculate the energy supplied in joules.',ans:14400,tol:50,unit:'J',wk:'Q = VIt = 12 × 2.5 × (8 × 60) = 12 × 2.5 × 480 = 14,400 J'},
+  {id:'c11',tp:'Efficiency',q:'A light bulb receives 100 J of electrical energy and produces 12 J of light energy. Calculate the efficiency as a percentage.',ans:12,tol:0.1,unit:'%',wk:'Efficiency = (useful output ÷ total input) × 100 = (12 ÷ 100) × 100 = 12%'},
+  {id:'c12',tp:'SHC — find final temperature',q:'2 kg of water at 20°C (c = 4200 J/kg°C) absorbs 252,000 J of energy. What is the final temperature in °C?',ans:50,tol:0.2,unit:'°C',wk:'ΔT = ΔQ ÷ (mc) = 252,000 ÷ (2 × 4200) = 252,000 ÷ 8400 = 30°C. Final temp = 20 + 30 = 50°C'}
+];
+
+var ragScores={},ds={},cs={};
+
+function sp(id){
+  document.querySelectorAll('.pg').forEach(function(p){p.classList.remove('on')});
+  document.querySelectorAll('.nb').forEach(function(b){b.classList.remove('on')});
+  document.getElementById('pg-'+id).classList.add('on');
+  var m={ko:0,sa:1,dq:2,cq:3,sm:4};
+  document.querySelectorAll('.nb')[m[id]].classList.add('on');
+  window.scrollTo(0,0);
+}
+
+function bSA(){
+  var c=document.getElementById('sa-wrap');c.innerHTML='';
+  RAG_SECTIONS.forEach(function(sec){
+    var wrap=document.createElement('div');wrap.className='rag-section';
+    var head=document.createElement('div');head.className='rag-header '+sec.cls;head.textContent=sec.label;
+    var body=document.createElement('div');body.className='rag-body';
+    sec.skills.forEach(function(sk){
+      var row=document.createElement('div');row.className='rag-row';
+      row.innerHTML='<span class="rag-skill">'+sk.tx+'</span>'
+        +'<div class="rag-btns">'
+        +'<button class="rb2" onclick="setRAG(\''+sk.id+'\',\'g\',this)">G</button>'
+        +'<button class="rb2" onclick="setRAG(\''+sk.id+'\',\'a\',this)">A</button>'
+        +'<button class="rb2" onclick="setRAG(\''+sk.id+'\',\'r\',this)">R</button>'
+        +'</div>';
+      body.appendChild(row);
+    });
+    wrap.appendChild(head);wrap.appendChild(body);
+    c.appendChild(wrap);
+  });
+}
+
+function setRAG(id,v,btn){
+  ragScores[id]=v;
+  btn.parentElement.querySelectorAll('button').forEach(function(b){b.classList.remove('rg','ra','rr')});
+  btn.classList.add(v==='g'?'rg':v==='a'?'ra':'rr');
+}
+
+function bDQ(){
+  var c=document.getElementById('dq-wrap');c.innerHTML='';
+  DQ.forEach(function(q,i){
+    var d=document.createElement('div');d.className='qb';
+    var h='<p style="font-size:12px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">'+q.tp+' · Q'+(i+1)+' of '+DQ.length+'</p>'
+      +'<p class="qt">'+q.q+'</p>';
+    q.os.forEach(function(o,j){
+      h+='<button class="ob" onclick="chkD(\''+q.id+'\','+j+','+q.c+',this,\'fb-'+q.id+'\')">'+String.fromCharCode(65+j)+') '+o+'</button>';
+    });
+    h+='<div class="fb" id="fb-'+q.id+'"></div>';
+    d.innerHTML=h;c.appendChild(d);
+  });
+}
+
+function chkD(qid,ch,co,btn,fbid){
+  btn.parentElement.querySelectorAll('.ob').forEach(function(b){b.disabled=true});
+  var fb=document.getElementById(fbid);fb.classList.add('on');
+  var q=DQ.filter(function(x){return x.id===qid})[0];
+  if(ch===co){
+    btn.classList.add('oc');fb.className='fb on fbc';
+    fb.innerHTML='<strong>Correct!</strong> '+q.ex;ds[qid]=true;
+  } else {
+    btn.classList.add('ow');
+    btn.parentElement.querySelectorAll('.ob')[co].classList.add('orc');
+    fb.className='fb on fbw';
+    fb.innerHTML='<strong>Incorrect.</strong> '+q.ex;ds[qid]=false;
+  }
+}
+
+function bCQ(){
+  var c=document.getElementById('cq-wrap');c.innerHTML='';
+  CQ.forEach(function(q,i){
+    var d=document.createElement('div');d.className='card';d.style.marginBottom='14px';
+    d.innerHTML='<p style="font-size:12px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">'+q.tp+' · Q'+(i+1)+' of '+CQ.length+'</p>'
+      +'<p style="font-size:14px;margin-bottom:10px;line-height:1.55">'+q.q+'</p>'
+      +'<p style="font-size:12px;color:#888;margin-bottom:2px">Answer in '+q.unit+'</p>'
+      +'<input class="ci" type="number" id="ci-'+q.id+'" placeholder="Type your numerical answer..." step="any"/>'
+      +'<button class="ckb" onclick="chkC(\''+q.id+'\','+q.ans+','+q.tol+',\'cf-'+q.id+'\')">Check answer</button>'
+      +'<div class="fb" id="cf-'+q.id+'"></div>';
+    c.appendChild(d);
+  });
+}
+
+function chkC(id,ans,tol,fbid){
+  var inp=document.getElementById('ci-'+id);
+  var v=parseFloat(inp.value);
+  var fb=document.getElementById(fbid);fb.classList.add('on');
+  if(isNaN(v)){fb.className='fb on fbw';fb.textContent='Please enter a numerical answer.';return;}
+  inp.disabled=true;
+  var q=CQ.filter(function(x){return x.id===id})[0];
+  if(Math.abs(v-ans)<=tol){
+    fb.className='fb on fbc';
+    fb.innerHTML='<strong>Correct!</strong> Working: '+q.wk;cs[id]=true;
+  } else {
+    fb.className='fb on fbw';
+    fb.innerHTML='<strong>Not quite.</strong> Correct answer: <strong>'+ans+' '+q.unit+'</strong>. Working: '+q.wk;cs[id]=false;
+  }
+}
+
+function bs(){
+  var dT=DQ.length,dR=Object.values(ds).filter(function(v){return v}).length;
+  var cT=CQ.length,cR=Object.values(cs).filter(function(v){return v}).length;
+  var tot=dT+cT,right=dR+cR;
+  var pct=tot>0?Math.round(right/tot*100):0;
+  var allRAG=Object.values(ragScores);
+  var totG=allRAG.filter(function(v){return v==='g'}).length;
+  var totA=allRAG.filter(function(v){return v==='a'}).length;
+  var totR=allRAG.filter(function(v){return v==='r'}).length;
+  var totSkills=0;RAG_SECTIONS.forEach(function(s){totSkills+=s.skills.length});
+  var col=pct>=70?'#166534':pct>=50?'#92400e':'#991b1b';
+  var bg=pct>=70?'#dcfce7':pct>=50?'#fef3c7':'#fee2e2';
+  var lbl=pct>=70?'Great work! Keep polishing.':pct>=50?'Good progress — focus on amber and red areas.':'Needs revision — work through the KO topic by topic.';
+
+  var topicMap=[
+    {lb:'Energy Stores & Transfers',skills:['r1a','r1b','r1c','r1d'],di:['d1','d2','d3'],ci:['c11']},
+    {lb:'Power & Data Handling',skills:['r2a','r2b','r2c','r2d'],di:['d4','d5'],ci:['c1','c2']},
+    {lb:'Pressure',skills:['r3a','r3b','r3c','r3d'],di:['d6','d7'],ci:['c3','c4','c5']},
+    {lb:'Specific Heat Capacity',skills:['r4a','r4b','r4c','r4d'],di:['d8','d9','d10'],ci:['c6','c7','c8','c9','c10','c12']},
+    {lb:'Particle Model of Matter',skills:['r5a','r5b','r5c','r5d'],di:['d11','d12'],ci:[]},
+    {lb:'Heating Curves & Graphs',skills:['r6a','r6b','r6c','r6d'],di:['d13','d14'],ci:[]},
+    {lb:'Thermal Energy Transfer',skills:['r7a','r7b','r7c','r7d'],di:['d15','d16','d17','d18'],ci:[]},
+    {lb:'Energy Calculations',skills:['r8a','r8b','r8c','r8d'],di:['d19','d20'],ci:['c6','c7','c8','c9','c12']}
+  ];
+
+  var rows='';var strong=[];var weak=[];var developing=[];
+  topicMap.forEach(function(t){
+    var seen={};var qr=[];
+    t.di.forEach(function(id){if(!seen[id]&&ds[id]!==undefined){seen[id]=1;qr.push(ds[id])}});
+    t.ci.forEach(function(id){if(!seen[id]&&cs[id]!==undefined){seen[id]=1;qr.push(cs[id])}});
+    var sv=t.skills.map(function(id){return ragScores[id]}).filter(Boolean);
+    var ragG=sv.filter(function(v){return v==='g'}).length;
+    var ragA=sv.filter(function(v){return v==='a'}).length;
+    var ragR=sv.filter(function(v){return v==='r'}).length;
+    var qp=qr.length?qr.filter(function(v){return v}).length/qr.length:null;
+    var st,pc;
+    if(qp!==null){
+      if(qp>=0.75){st='Strong';pc='pig';}
+      else if(qp>=0.5){st='Developing';pc='pia';}
+      else{st='Needs work';pc='pir';}
+    } else if(ragG===t.skills.length){st='Self-confident';pc='pig';}
+    else if(ragR>0){st='Needs work';pc='pir';}
+    else if(ragA>0){st='Developing';pc='pia';}
+    else{st='Not assessed';pc='pia';}
+    var ragStr=sv.length?(' <span style="font-size:11px;color:#888">('+ragG+'G/'+ragA+'A/'+ragR+'R)</span>'):'';
+    rows+='<div class="tr2"><span style="font-size:14px">'+t.lb+ragStr+'</span><span class="pill '+pc+'">'+st+'</span></div>';
+    if(st==='Strong'||st==='Self-confident')strong.push(t.lb);
+    else if(st==='Developing')developing.push(t.lb);
+    if(st==='Needs work')weak.push(t.lb);
+  });
+
+  var html='<div class="g3" style="margin-bottom:16px">'
+    +'<div class="stat-card"><div class="stat-label">Questions correct</div><div class="stat-val">'+right+'/'+tot+'</div></div>'
+    +'<div class="stat-card"><div class="stat-label">Overall score</div><div class="stat-val" style="color:'+col+'">'+pct+'%</div></div>'
+    +'<div class="stat-card" style="background:'+bg+'"><div class="stat-label">Result</div><div style="font-size:12px;font-weight:700;color:'+col+';margin-top:6px;line-height:1.4">'+lbl+'</div></div>'
+    +'</div>'
+    +'<div class="g3" style="margin-bottom:16px">'
+    +'<div class="stat-card"><div class="stat-label">Skills rated</div><div class="stat-val">'+allRAG.length+'/'+totSkills+'</div></div>'
+    +'<div class="stat-card"><div class="stat-label">RAG overview</div><div style="margin-top:8px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap">'
+    +'<span class="pill pig">'+totG+' confident</span>'
+    +'<span class="pill pia">'+totA+' unsure</span>'
+    +'<span class="pill pir">'+totR+' not yet</span>'
+    +'</div></div>'
+    +'<div class="stat-card"><div class="stat-label">Breakdown</div><div style="margin-top:6px">'
+    +'<div style="font-size:13px;color:#555">MCQ: '+dR+'/'+dT+'</div>'
+    +'<div style="font-size:13px;color:#555">Calcs: '+cR+'/'+cT+'</div>'
+    +'</div></div>'
+    +'</div>'
+    +'<div class="st" style="font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.07em;margin-bottom:9px">Topic-by-topic breakdown</div>'
+    +'<div class="card">'+rows+'</div>';
+
+  if(strong.length){html+='<div class="card c-green" style="margin-top:12px"><h3 style="color:#166534;margin-bottom:6px">✓ Topics you know well</h3><p style="font-size:13px;color:#444">'+strong.join(' &nbsp;·&nbsp; ')+'</p></div>';}
+  if(developing.length){html+='<div class="card c-amber" style="margin-top:12px"><h3 style="color:#92400e;margin-bottom:6px">~ Topics to consolidate</h3><p style="font-size:13px;color:#444">'+developing.join(' &nbsp;·&nbsp; ')+'</p></div>';}
+  if(weak.length){
+    html+='<div class="card c-red" style="margin-top:12px"><h3 style="color:#991b1b;margin-bottom:6px">✗ Priority topics to revise</h3>'
+      +'<p style="font-size:13px;color:#444">'+weak.join(' &nbsp;·&nbsp; ')+'</p>'
+      +'<p style="font-size:13px;color:#666;margin-top:8px">Return to the Knowledge Organiser, re-read those sections, then retry those questions. Aim to move all RED → AMBER → GREEN before the exam.</p></div>';
+  }
+  if(!strong.length&&!weak.length&&!developing.length&&tot===0){
+    html+='<div class="card c-amber" style="margin-top:12px"><p style="font-size:13px;color:#444">Complete the RAG self-assessment and questions first to see your personalised breakdown.</p></div>';
+  }
+  html+='<div class="card c-sky" style="margin-top:14px">'
+    +'<h3 style="color:#075985;margin-bottom:8px">📋 Key exam reminders</h3>'
+    +'<div style="font-size:13px;color:#444;line-height:1.8">'
+    +'<p>• Always convert grams → kg (÷1000) and minutes → seconds (×60) before calculating.</p>'
+    +'<p>• ΔT is the CHANGE in temperature — always T_final − T_initial, not just T_final.</p>'
+    +'<p>• During a change of state: temperature is CONSTANT — energy breaks bonds, not increases KE.</p>'
+    +'<p>• Conduction needs a medium. Radiation does NOT. Convection only works in fluids (not solids).</p>'
+    +'<p>• Matt black = best absorber AND emitter. Shiny = best reflector, worst absorber/emitter.</p>'
+    +'<p>• Exclude anomalous values from mean calculations — always check your data for outliers first.</p>'
+    +'<p>• SHC experimental value is ALWAYS higher than accepted — energy loss to surroundings.</p>'
+    +'</div></div>';
+  html+='<div style="text-align:center;margin-top:24px"><button class="ab" onclick="sp(\'ko\')">Review Knowledge Organiser →</button></div>';
+  document.getElementById('sm-wrap').innerHTML=html;
+}
+
+bSA();bDQ();bCQ();
+</script>
+</body>
+</html>
